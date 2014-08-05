@@ -1,0 +1,60 @@
+@page { size:8.5in 11in; margin: 0.25in; }
+@device-width { size:8.5in 11in; margin: 0.25in; }
+@page land { size: landscape;}
+
+.center {
+    text-align:center !important;
+}
+.cert-wrap {
+    display:block;
+    width:8.5in;
+    height:11in;
+}
+.cert-frame {
+    width:7.5in;
+    height:9.5in;
+    border:0.5in solid #d9d6c8;
+}
+.cert-logo .center{
+    margin:3.0in 0 0 0;
+    width:4in;
+    text-align:center;
+}
+.cert {
+    width:6.5in;
+    height:8.5in;
+    text-align:center;
+    border:0.5in solid #b9b299;
+}
+.cert-name {
+    margin:1in 0 0.5in 0;
+    color:#000;
+    text-align:center;
+    font-size:4.0em;
+}
+.cert-company {
+    margin:11px 0 33px 0;
+    color:#b9b299;
+    text-align:center;
+    font-size:2.0em;
+}
+.cert-desc {
+    color:#000;
+    font-size:1.5em;
+    margin:11px 0 11px 0;
+}
+.cert-score {
+    color:#b9b299;
+    font-size:3.0em;
+    margin:11px 0 11px 0;
+}
+.cert-date {
+    color:#000;
+    font-size:1.5em;
+    margin:11px 0 11px 0;
+}
+.cert-www {
+    color:#cccccc;
+    font-size:1.2em;
+    margin:11px 0 11px 0;
+}

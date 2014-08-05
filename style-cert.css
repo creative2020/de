@@ -1,0 +1,65 @@
+html {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+.center {
+    text-align:center !important;
+}
+/*********************************************
+	Score certificate
+*********************************************/
+.cert-wrap {
+    display:block;
+    width:100%;
+    height:100%;
+}
+.cert-frame {
+    border:50px solid #d9d6c8;
+}
+.cert-logo {
+    margin:44px 0 0 -25px;
+    width:100%;
+    text-align:center;
+}
+.cert {
+    text-align:center;
+    border:50px solid #b9b299;
+    height:70%;
+}
+.cert-name {
+    margin:44px 0 11px 0;
+    color:#000;
+    text-align:center;
+    font-size:5.0em;
+}
+.cert-company {
+    margin:11px 0 33px 0;
+    color:#b9b299;
+    text-align:center;
+    font-size:3.0em;
+}
+.cert-desc {
+    color:#000;
+    font-size:2.0em;
+    margin:11px 0 11px 0;
+}
+.cert-score {
+    color:#b9b299;
+    font-size:3.0em;
+    margin:11px 0 11px 0;
+}
+.cert-date {
+    color:#000;
+    font-size:1.5em;
+    margin:11px 0 11px 0;
+}
+.cert-www {
+    color:#cccccc;
+    font-size:1.2em;
+    margin:11px 0 11px 0;
+}
+
