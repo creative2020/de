@@ -46,22 +46,44 @@
 <?php } ?>
 </head>
 <body>
-<div id="container">
+<div class="container-fluid">
 
-  <div id="top">
-
-    <div class="logo"><a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a></div>
-
-    <div id="social">
- <div class="google"><a href="https://plus.google.com/106849917956925834579/about" title="google +" target="_blank"></a></div>
-      <div class="facebook"><a href="http://www.facebook.com/pages/Dataedge/161795523849507" title="Facebook" target="_blank"></a></div>
-      <div class="in"><a href="http://www.linkedin.com/in/robdidlake" title="Linked In" target="_blank"></a></div>
-      <div class="twitter"><a href="http://twitter.com/#!/dataedge" title="Twitter" target="_blank"></a></div>
+<div class="row">
+    <div id="top"class="col-sm-10 col-sm-offset-1">
+        <div class="logo col-sm-6">
+            <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a>
+        </div>
+        <div class="col-sm-6">
+            <div id="social" class="pull-right">
+                <div class="google pull-right"><a href="https://plus.google.com/106849917956925834579/about" title="google +" target="_blank"></a></div>
+                <div class="facebook pull-right"><a href="http://www.facebook.com/pages/Dataedge/161795523849507" title="Facebook" target="_blank"></a></div>
+                <div class="in pull-right"><a href="http://www.linkedin.com/in/robdidlake" title="Linked In" target="_blank"></a></div>
+                <div class="twitter pull-right"><a href="http://twitter.com/#!/dataedge" title="Twitter" target="_blank"></a></div>
+            </div>
+            <div class="phone">913-780-2525</div>
+        </div>
     </div>
-    <div class="phone">913-780-2525</div>
+</div>         
+    
+<div class="row">
+    <div id="navbar" class="col-sm-10 col-sm-offset-1">
+        <div class="collapse navbar-collapse navbar-responsive-collapse nav-container container">
+                        
+                       
+						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+                        
+						
+                        </div>
+    </div>
+</div>
+    
+<!--    nav-->
 
-  </div>
-  <div id="nav">
-    <div class="home"><a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a></div>
-    <?php wp_nav_menu(array('menu' => 'Main Navigation')); ?>
-  </div>
+<div class="row">
+					
+					</div>
+    
+    
+    
+    
+<!--header-->

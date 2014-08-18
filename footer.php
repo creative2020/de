@@ -1,11 +1,12 @@
-  <div id="footer">
-    <div class="one">
+  <div id="footer" class="row">
+    <div class="col-sm-4">
       <h2>Solutions</h2>
       <ul>
         <?php wp_nav_menu(array('menu' => 'Solutions')); ?>
       </ul>
     </div>
-    <div class="two">
+    
+      <div class="col-sm-4">
       <h2>Twitter <a href="http://www.twitter.com/dataedge" target="_blank">@dataedge</a></h2>
       <p><?php  
         $username = "dataedge"; 
@@ -26,7 +27,8 @@
         echo stripslashes($prefix) . parse_feed($twitterFeed) . stripslashes($suffix);  
       ?></p>
     </div>
-    <div class="three">
+    
+      <div class="col-sm-4">
       <h2>Contact us</h2>
       <p>Dataedge Solutions<br />
       Kansas City and Wichita</p>
@@ -37,7 +39,8 @@
     <!--<div class="login"><a href="#" title="Client Login"></a></div>-->
     <div class="support"><a href="../support" title="Support"></a></div>
     <div class="clear"></div>
-  </div>
+</div><!--row-->
+
   <div id="copyright">
     <p><?php _e('&copy;','flexx'); echo ' '.date('Y').' '; _e(''.bloginfo('name'). ' - All rights reserved.','flexx'); ?> | <a href="http://www.dataedge.com/privacypolicy/" title="Privacy Policy">privacy policy</a> | <a href="http://www.dataedge.com/payments/" title="Payments">payments</a></p>
   </div>

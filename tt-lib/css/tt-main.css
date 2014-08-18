@@ -1,0 +1,53 @@
+#navbar {
+    background-color:#5e5a4a;
+    color:white;
+}
+
+.navbar,
+.nav-container {
+    border-bottom:1px solid #5e5a4a;
+    height:50px;
+    overflow:hidden;
+}
+.menu-social-media-container {
+    height:50px;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+.navbar,
+.navbar-default .navbar-brand {
+    color:white;
+}
+.navbar-default .navbar-brand:hover {
+    color:#a50050;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a50050;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+.nav > li > a {
+    color:white;
+    text-decoration:none;
+}
+.nav > li > a:hover {
+    color:white;
+    background-color:#bd8b29;
+}

@@ -22,19 +22,22 @@ body {
 	background: #dad4bc;
 }
 
+/*
 #container {
 	margin: 15px auto;
 	width: 949px;
 }
+*/
 
 
 /*Top*/
 
 #top {
-	padding: 12px 15px;
-	width: 919px;
-	height: 83px;
-	background: url('images/top.png') top left no-repeat;
+/*    background: url('images/top.png') top left no-repeat;*/
+    padding:1.0em 1.3em;
+    background-color:#b2ac91;
+    border-top-left-radius:1.0em;
+    border-top-right-radius:1.0em;
 }
 
 #top .phone {
@@ -58,13 +61,13 @@ body {
 }
 
 #top #social {
-	float: right;
+/*	float: right;*/
 	margin: 8px 0 0 0;
 	width: 144px;
 }
 
 #top #social .facebook {
-	float: left;
+	display: block;
 	margin: 0 6px 0 0;
 	width: 28px;
 	height: 28px;
@@ -85,7 +88,7 @@ body {
 }
 
 #top #social .google {
-	float: left;
+	display: block;
 	margin: 0 6px 0 0;
 	width: 28px;
 	height: 28px;
@@ -106,7 +109,7 @@ body {
 }
 
 #top #social .in {
-	float: left;
+	display: block;
 	margin: 0 6px 0 0;
 	width: 28px;
 	height: 28px;
@@ -127,8 +130,9 @@ body {
 }
 
 #top #social .twitter {
-	float: left;
-	width: 28px;
+	display: block;
+    margin: 0 6px 0 0;
+    width: 28px;
 	height: 28px;
 }
 
@@ -147,146 +151,34 @@ body {
 }
 
 
-/*Nav*/
-
-#nav {
-	width: 949px;
-	height: 46px;
-	background: url('images/navigation.png') top repeat-x;
-}
-
-#nav .home {
-	float: left;
-	width: 25px;
-    height: 46px;
-	background: url('images/home_img.png') top left no-repeat;
-}
-
-#nav .home a {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-#nav ul {
-	float: left;
-	margin: 0;
-	padding: 0;
-	display: block;
-	width: 924px;
-	height: 41px;
-	list-style: none;
-}
-
-#nav ul li {
-	float: left;
-	list-style: none;
-}
-
-#nav ul li a {
-	display: block;
-	float: left;
-	padding: 10px 20px 0 20px;
-	width: auto;
-	height: 30px;
-	color: #ffffff;
-	font-size: 16px;
-	text-decoration: none;
-	background: url('images/nav_div.png') top right no-repeat;
-}
-
-#nav ul li a:hover {
-	z-index: 200;
-	position: relative;
-	color: #d0c7a8;
-}
-
-#nav ul li:hover {
-	position: relative;
-	z-index: 200;
-}
-
-#nav ul li:hover > a {
-	color: #d0c7a8;
-	background-color: #7d775d;
-}
-
-#nav ul li:hover > a.sub {
-	color: #ffffff;
-	background-color: #eaeaea;
-}
-
-#nav ul li.current_page_item a {
-	color: #d0c7a8;
-	background-color: #7d775d;
-}
-
-#nav ul li a.sub {
-}
-
-#nav ul li.current a.sub {
-	color: #ffffff;
-}
-
-#nav ul :hover ul {
-	left: 0;
-	top: 40px;
-	width: auto;
-}
-
-#nav ul ul, 
-#nav ul :hover ul ul {
-	position: absolute;
-	left: -9999px;
-	top: -9999px;
-	width: 0;
-	height: 0;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#nav ul :hover ul li {
-	margin: 0;
-	color: #ffffff;
-	background: #7d775d;
-}
-
-/*Sub*/
-#nav ul :hover ul li a {
-	width: 200px;
-	padding: 10px 20px 10px 20px;
-	height: 14px;
-	font-size: 12px;
-	color: #ffffff;
-	border: none;
-	text-align: left;
-	background: #7d775d;
-}
-
-#nav ul :hover ul :hover {
-	background: #7d775d;
-	color: #d0c7a8;
-}
 
 
 
 /*Main*/
 
 #main {
+/*
 	padding: 15px 0;
 	width: 949px;
 	background: #ffffff;
 	clear: both;
+*/
 }
 
 
 /*Content*/
 
-#main #content {
+#main {
+    background-color:white;
+    
+/*
 	float: left;
 	padding: 20px 0 0 20px;
 	width: 611px;
+*/
+}
+#content {
+    
 }
 
 #main #content h1 {
@@ -559,12 +451,17 @@ body {
 
 /*Slider*/
 
-#main #slider {
+#slider {
+    background-color:grey;
+    height: 308px;
+/*
 	float: left;
     width: 946px;
-    height: 308px;
+    
+*/
 }
 
+/*
 #main #slider .nivo-html-caption {
 	padding: 20px;
 	color: #534f3d;
@@ -572,16 +469,19 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 }
+*/
 
 
 /*Header*/
 
 #main #header {
+/*
 	float: left;
 	margin: 0 0 0 20px;
 	padding: 30px 20px 0 20px;
 	width: 571px;
 	height: 60px;
+*/
 }
 
 #main #header h1 {
@@ -597,17 +497,22 @@ body {
 
 
 #main #sidebar {
+    background-color:white;
+/*
 	float: right;
 	width: 303px;
+*/
 }
 
 
 /*Sidebar - News*/
 
 #sidebar #news {
+/*
 	float: right;
 	width: 283px;
 	padding: 0px 20px 0 0;
+*/
 }
 
 #sidebar #news h3 {
@@ -637,14 +542,18 @@ body {
 /*Footer*/
 
 #footer {
+    background-color:#5e5a4a;
+/*
 	padding: 15px 50px;
 	width: 849px;
+
 	background: url('images/footer.png') #5e5a4a bottom left no-repeat;
+    */
 }
 
 #footer h2 {
 	margin: 0 0 10px 0;
-	paddong: 0;
+	padding: 0;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: bold;
@@ -695,6 +604,7 @@ body {
 	width: 170px;
 }
 
+/*
 #footer .two p {
 	margin: 0;
 	padding: 0;
@@ -734,6 +644,7 @@ body {
 	height: 100%;
 	cursor: pointer;
 }
+*/
 
 
 /*Copyright*/

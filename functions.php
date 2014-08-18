@@ -1,5 +1,9 @@
 <?php
 
+// TT Functions
+require_once('tt-lib/tt-functions.php');
+
+
 // Widgets
 if ( function_exists('register_sidebar') )
 	register_sidebar('name=Homepage Sidebar');
