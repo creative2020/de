@@ -13,6 +13,43 @@ Template Name: Home
 </div> <!--row-->
 
 <div class="row">
+    <div id="quicklink-wrap" class="col-sm-10 col-sm-offset-1">
+        <div class="row">
+            
+            <a href="#">
+                
+                <div class="quicklink col-sm-4">
+                    
+                    <i class="now fa fa-globe"></i><i class="go fa fa-external-link"></i>
+                    <h2>Heading goes here</h2>
+                    <p>Some text about this section goes here.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="quicklink col-sm-4">
+                    <i class="now fa fa-globe"></i><i class="go fa fa-external-link"></i>
+                    <h2>Heading goes here</h2>
+                    <p>Some text about this section goes here.</p>
+                
+                </div>
+            </a>
+            <a href="#">
+                <div class="quicklink col-sm-4">
+                    <i class="now fa fa-globe"></i><i class="go fa fa-external-link"></i>
+                    <h2>Heading goes here</h2>
+                    <p>Some text about this section goes here.</p>
+                
+                </div>
+            </a>
+    </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="row">
     <div id="main" class="col-sm-10 col-sm-offset-1">
         <div id="content" class="col-sm-7">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -29,7 +66,6 @@ Template Name: Home
         
     </div><!--row-->
 </div>
-</div>
+
 
   <?php get_footer() ?>
-</div>

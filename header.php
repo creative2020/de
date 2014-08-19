@@ -53,7 +53,7 @@
         <div class="logo col-sm-6">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-7">
             <div id="social" class="pull-right">
                 <div class="google pull-right"><a href="https://plus.google.com/106849917956925834579/about" title="google +" target="_blank"></a></div>
                 <div class="facebook pull-right"><a href="http://www.facebook.com/pages/Dataedge/161795523849507" title="Facebook" target="_blank"></a></div>

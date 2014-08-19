@@ -157,19 +157,9 @@ body {
 /*Main*/
 
 #main {
-/*
-	padding: 15px 0;
-	width: 949px;
-	background: #ffffff;
-	clear: both;
-*/
-}
-
-
-/*Content*/
-
-#main {
     background-color:white;
+    padding-top:2.0em;
+    padding-bottom:2.0em;
     
 /*
 	float: left;
@@ -543,55 +533,41 @@ body {
 
 #footer {
     background-color:#5e5a4a;
-/*
-	padding: 15px 50px;
-	width: 849px;
-
-	background: url('images/footer.png') #5e5a4a bottom left no-repeat;
-    */
+    padding: 2.0em 1.0em;
+    font-size:1.2em
 }
-
 #footer h2 {
-	margin: 0 0 10px 0;
+	margin: 0 0 1.0em 0;
 	padding: 0;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 1.5em;
 	font-weight: bold;
 }
-
 #footer h2 a {
 	color: #ffffff;
-	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
 }
-
 #footer ul {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
-	line-height: 18px;
-	font-size: 12px;
 	list-style: none;
 }
-
 #footer ul a {
 	color: #ffffff;
 	text-decoration: none;
 }
-
 #footer ul a:hover {
 	color: #a2a199;
 }
-
 #footer p {
 	margin: 0;
-	padding: 0 0 10px 0;
+	padding: 0 0 1.0em 0;
 	color: #ffffff;
-	line-height: 18px;
-	font-size: 12px;
 }
 
+/*
 #footer .one {
 	float: left;
 	margin: 0 20px 0 0;
@@ -603,6 +579,7 @@ body {
 	margin: 0 20px 0 0;
 	width: 170px;
 }
+*/
 
 /*
 #footer .two p {
@@ -650,28 +627,14 @@ body {
 /*Copyright*/
 
 #copyright {
-	padding: 20px 0 0 40px;
-	width: 909px;
+	padding: 2.0em 1.0em;
 }
 
 #copyright p {
 	margin: 0;
 	padding: 0;
-	font-size: 12px;
+	font-size: 1.2em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Section One*/
 

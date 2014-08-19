@@ -1,3 +1,4 @@
+/*Nav*/
 #navbar {
     background-color:#5e5a4a;
     color:white;
@@ -51,3 +52,78 @@
     color:white;
     background-color:#bd8b29;
 }
+
+/*Quicklinks*/
+
+#quicklink-wrap {
+    color:white;
+    font-size:1.4em;
+    text-align:center;
+}
+#quicklink-wrap a {
+    color:white;
+}
+.quicklink:hover {
+    background-color:#f0c723;
+    color:white;
+    text-align:center;
+}
+#quicklink-wrap i {
+    font-size:4.0em;
+}
+#quicklink-wrap h2 {
+    color:white;
+    font-size:1.5em;
+    padding-bottom:0.5em;
+}
+
+.quicklink {
+    padding:1.0em;
+    height:250px;
+    overflow:hidden;
+    background-color:#b2ac91;
+    transition: background-color 0.6s ease;
+}
+.qlhover {
+    display:none;
+    height:250px;
+    width:100%;
+}
+.qlhover:hover {
+    display:block;
+    background-color:#f0c723;
+    
+}
+
+.quicklink .go {
+    display:none;
+}
+
+.quicklink:hover .go {
+    display:block;
+}
+.quicklink:hover .now {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
