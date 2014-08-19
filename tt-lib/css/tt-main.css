@@ -106,12 +106,36 @@
     display:none;
 }
 
+/*Sidebar*/
 
 
+#sidebar {
+    background-color:red;
+    min-height:800px;
+}
 
+#sidebar h3 {
+	margin: 4px 0 10px 0;
+	padding: 0;
+	color: #3f3f3f;
+	font-size: 14px;
+	font-weight: bold;
+}
 
+#sidebar h3 a {
+	color: #3f3f3f;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
 
-
+#sidebar p {
+	margin: 0;
+	padding: 0 0 10px 0;
+	color: #3f3f3f;
+	font-size: 12px;
+	line-height: 18px;
+}
 
 
 

@@ -483,50 +483,7 @@ body {
 }
 
 
-/*Sidebar*/
 
-
-#main #sidebar {
-    background-color:white;
-/*
-	float: right;
-	width: 303px;
-*/
-}
-
-
-/*Sidebar - News*/
-
-#sidebar #news {
-/*
-	float: right;
-	width: 283px;
-	padding: 0px 20px 0 0;
-*/
-}
-
-#sidebar #news h3 {
-	margin: 4px 0 10px 0;
-	padding: 0;
-	color: #3f3f3f;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-#sidebar #news h3 a {
-	color: #3f3f3f;
-	font-size: 14px;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-#sidebar #news p {
-	margin: 0;
-	padding: 0 0 10px 0;
-	color: #3f3f3f;
-	font-size: 12px;
-	line-height: 18px;
-}
 
 
 /*Footer*/
