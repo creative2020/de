@@ -51,16 +51,13 @@ Template Name: Home
 
 <div class="row">
     <div id="main" class="col-sm-6 col-sm-offset-1">
-        <div id="content" class="col-sm-12">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-              <h1><?php the_title(); ?></h1>
-              <?php the_content('<p>Read More'); ?>
-              <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-            <?php endwhile; endif; ?>
+        <div id="content" class="row col-sm-12">
+            <?php echo do_shortcode('[tt_posts limit="3" cat_name="home"]'); ?>
         </div>
         </div>    
    
-        <div id="sidebar" class="col-sm-4">
+        <div id="sidebar" class="col-xs-12 col-sm-4">
+            <img src="/wp-content/themes/dataedge/images/zombie-approved.png" class="img-responsive">
             <?php dynamic_sidebar( 'tt-sidebar' ); ?>
         </div>
         
