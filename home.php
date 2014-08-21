@@ -57,7 +57,7 @@ Template Name: Home
         </div>    
    
         <div id="sidebar" class="col-xs-12 col-sm-4">
-            <img src="/wp-content/themes/dataedge/images/zombie-approved.png" class="img-responsive">
+            <img src="/wp-content/themes/de/images/zombie-approved.png" class="img-responsive">
             <?php dynamic_sidebar( 'tt-sidebar' ); ?>
         </div>
         
@@ -66,19 +66,19 @@ Template Name: Home
 <div class="row">
     <div id="partners" class="row col-sm-10 col-sm-offset-1">
         <div class="partner-logo col-xs-12 col-sm-3  col-sm-offset-1 nimble">
-            <img src="/wp-content/themes/dataedge/images/partners/Nimble-Storage-Logo-rev.png" class="">
+            <img src="/wp-content/themes/de/images/partners/Nimble-Storage-Logo-rev.png" class="">
         </div>    
         <div class="partner-logo col-xs-12 col-sm-2">
-            <img src="/wp-content/themes/dataedge/images/partners/asigra-logo-rev.png" class="">
+            <img src="/wp-content/themes/de/images/partners/asigra-logo-rev.png" class="">
         </div>
         <div class="partner-logo col-xs-12 col-sm-2">
-            <img src="/wp-content/themes/dataedge/images/partners/stor-server-logo-rev.png" class="">
+            <img src="/wp-content/themes/de/images/partners/stor-server-logo-rev.png" class="">
         </div>
         <div class="partner-logo col-xs-12 col-sm-1 hp">
-            <img src="/wp-content/themes/dataedge/images/partners/hp-logo-pr-rev.png" class="">
+            <img src="/wp-content/themes/de/images/partners/hp-logo-pr-rev.png" class="">
         </div>
         <div class="partner-logo col-xs-12 col-sm-2">
-            <img src="/wp-content/themes/dataedge/images/partners/quantum_logo-rev.png" class="">
+            <img src="/wp-content/themes/de/images/partners/quantum_logo-rev.png" class="">
         </div>
       </div>  
 </div><!--row-->
