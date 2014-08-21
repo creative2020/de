@@ -157,6 +157,86 @@
     margin-right:30px;
 }
     
+#partners {
+    min-height:125px;
+    background-color:#b2ac91;
+    padding-top:2.0em;
+    vertical-align:middle;
+    display:block;
+}
+.partner-logo {
+    padding:1.0em 0;
+    vertical-align:middle;
+    display:inline-block;
+    text-align:center;
+}
+.partner-logo img{
+    max-width:125px;
+    opacity:0.5;
+    text-align:center;
+}
+.partner-logo img:hover{
+    vertical-align:middle;
+    text-align:center;
+    opacity:0.8;
+}
+.hp img{
+    max-height:50px;
+}
+.nimble img{
+    min-width:200px;
+}
+
+
+
+
+
+
+/* mobile ------------------------START------------------- */
+
+@media only screen 
+and (max-width : 768px) {
+    
+#social .pull-right {
+}
+#social {
+    width:100%;
+    padding:0 auto;
+    text-align:center;
+}    
+#slider-wrap {
+        display:none;
+    }
+
+.partner-logo {
+    border-bottom:1px solid #dad4bc;
+}
+.quicklink {
+    height:auto;
+    padding: 1.0em;
+    overflow:visible;
+    background-color: #5e5a4a;
+    border-bottom:1px solid #dad4bc;
+}
+.now, .go, .quicklink:hover .go {
+    display:none;
+}
+
+} /* @media -------------END-----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

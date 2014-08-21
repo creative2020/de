@@ -49,18 +49,19 @@
 <div class="container-fluid">
 
 <div class="row">
-    <div id="top"class="col-sm-10 col-sm-offset-1">
-        <div class="logo col-sm-6">
+    <div id="top"class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="logo col-xs-12 col-sm-6">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a>
         </div>
-        <div class="col-sm-7">
-            <div id="social" class="pull-right">
+        <div class="col-xs-12 col-sm-7">
+            <div id="social" class="col-xs-12 col-sm-12 hidden-xs">
                 <div class="google pull-right"><a href="https://plus.google.com/106849917956925834579/about" title="google +" target="_blank"></a></div>
                 <div class="facebook pull-right"><a href="http://www.facebook.com/pages/Dataedge/161795523849507" title="Facebook" target="_blank"></a></div>
                 <div class="in pull-right"><a href="http://www.linkedin.com/in/robdidlake" title="Linked In" target="_blank"></a></div>
                 <div class="twitter pull-right"><a href="http://twitter.com/#!/dataedge" title="Twitter" target="_blank"></a></div>
             </div>
-            <div class="phone">913-780-2525</div>
+            <div class="phone col-xs-12 hidden-xs">913-780-2525</div>
+            <h2 class="phone-m col-xs-12 visible-xs-block text-center"><i class="fa fa-phone"></i> 913-780-2525</h2>
         </div>
     </div>
 </div>         
