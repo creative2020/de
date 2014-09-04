@@ -6,9 +6,8 @@ Template Name: Home
 <?php get_header(); ?>
 
 <div id="slider-wrap" class="row">
-    <div id="slider" class="col-sm-10 col-sm-offset-1">
-        <?php //echo do_shortcode('[layerslider id="2"]'); ?>
-        <img class="responsive" src="images/slider_placeholder.png">
+    <div id="slider" class="col-sm-10 col-sm-offset-1 flush">
+        <?php echo do_shortcode('[metaslider id=3372]'); ?>
     </div>
 </div> <!--row-->
 
@@ -57,7 +56,7 @@ Template Name: Home
         </div>    
    
         <div id="sidebar" class="col-xs-12 col-sm-4">
-            <img src="/wp-content/themes/de/images/zombie-approved.png" class="img-responsive">
+            <img src="/wp-content/themes/dataedge/images/zombie-approved.png" class="img-responsive">
             <?php dynamic_sidebar( 'tt-sidebar' ); ?>
         </div>
         

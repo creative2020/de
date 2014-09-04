@@ -2,7 +2,7 @@
 THEME NAME: Data Edge
 THEME URI: http://www.2020creative.com
 DESCRIPTION: Theme for Edge
-VERSION: 1.1
+VERSION: 1.2
 AUTHOR: Jeff Potts - 20/20 Creative
 AUTHOR URI: http://www.2020creative.com
 TAGS: Storage Management Solutions
@@ -433,8 +433,7 @@ body {
 /*Slider*/
 
 #slider {
-    background-color:grey;
-    height: 308px;
+    background-color:#f0c723;
 }
 
 /*Header*/
@@ -914,7 +913,7 @@ img.alignleft {
 }
 
 .widget_nav_menu li a:hover {
-	color: #bb7110;
+	color: #f0c723;
 	text-decoration: underline;
 }
 
@@ -1007,7 +1006,7 @@ input[type="button"],
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-reply-link:hover {
-	background: #df9c44;
+	background: #f0c723;
 	color: #FFFFFF !important;	
 	text-decoration: none !important;
 }
