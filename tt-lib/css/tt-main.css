@@ -263,6 +263,14 @@
 .hp-message h3{
     font-size:2.0em;
 }
+.edgeLoad-de-slider { visibility:hidden; }
+
+#slider {
+    height:400px;
+}
+
+
+
 /* mobile ------------------------START------------------- */
 
 @media only screen 
@@ -278,6 +286,7 @@ and (max-width : 768px) {
 #slider-wrap {
         display:none;
     }
+
 
 .partner-logo {
     border-bottom:1px solid #dad4bc;

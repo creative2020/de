@@ -13,9 +13,11 @@ Template Name: Home
 
 <div id="slider-wrap" class="row">
     <div id="slider" class="col-sm-10 col-sm-offset-1 flush">
-        <?php //echo do_shortcode('[metaslider id=3372]'); ?>
-        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-formula.png"/>
-    </div>
+        <?php echo do_shortcode('[edge_animation id="8"]'); ?>
+        
+<!--        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-formula.png"/>-->
+<!--        <div id="Stage" class="de-slider">-->
+	</div>
 </div> <!--row-->
 
 <div class="row">
