@@ -68,13 +68,22 @@
     
 <div class="row">
     <div id="navbar" class="col-sm-10 col-sm-offset-1">
-        <div class="collapse navbar-collapse navbar-responsive-collapse nav-container container">
+        
                         
                        
-						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+						<?php wp_nav_menu( array(
+                'menu'              => 'main-navigation',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            ); ?>
+            
                         
-						
-                        </div>
     </div>
 </div>
     
