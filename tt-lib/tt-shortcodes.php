@@ -80,17 +80,18 @@ if ( $the_query->have_posts() ) {
 		$permalink = get_permalink( $id );
         $post = get_post();
         //$image = the_post_thumbnail( 'thumbnail' );
-        $image = wp_get_attachment_url( $post_id );
+        $size = '250,125';
+        $image = get_the_post_thumbnail( $post_id, $size, $attr );
          
 		
 //HTML
         
-    $output .= '<a href="#"><div class="list-wrap"><div class="list-img col-xs-12 col-sm-4">';  
-    $output .= $image . '<img src="/wp-content/themes/dataedge/images/mark.png">'.
+    $output .= '<a href="'.$permalink.'"><div class="list-wrap"><div class="list-img col-xs-12 col-sm-4">';  
+    $output .= $image .
                 '</div>'.
                 '<div class="row col-xs-12 col-sm-8">'. 
                     '<h2>'. $post->post_title .'</h2>'.
-                    '<p>Lorem ipsum text goes here for the excerpt</p>'.
+                    '<p>'. $post->excerpt .'</p>'.
                 '</div></div>'.
                 '</a>'.
                 '<div class="clearfix"></div>';

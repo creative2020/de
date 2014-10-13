@@ -44,6 +44,23 @@
   rsv.customErrorHandler = null;
 </script>
 <?php } ?>
+    <!--Adobe Edge Runtime-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.0.min.js"></script>
+    <style>
+        .edgeLoad-de-slider { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('de-slider', 'de-slider', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "100px",
+    maxW: "none",
+    width: "100%",
+    height: "100%"
+}, {"dom":{}}, {"dom":{}});
+</script>
+<!--Adobe Edge Runtime End-->
 </head>
 <body>
 <div class="container-fluid">

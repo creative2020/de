@@ -192,6 +192,10 @@
     margin-left:-30px;
     margin-right:30px;
 }
+.list-img img {
+    width:250px;
+    height:125px;
+}
     
 #partners {
     min-height:125px;
@@ -268,7 +272,10 @@
 #slider {
     height:400px;
 }
-
+.bucket-text {
+    font-size:0.8em;
+    margin:-0.7em 0px;
+}
 
 
 /* mobile ------------------------START------------------- */

@@ -13,7 +13,9 @@ Template Name: Home
 
 <div id="slider-wrap" class="row">
     <div id="slider" class="col-sm-10 col-sm-offset-1 flush">
-        <?php echo do_shortcode('[edge_animation id="1"]'); ?>
+        <?php //echo do_shortcode('[edge_animation id="2"]'); ?>
+        
+        <div id="Stage" class="de-slider"></div>
         
 <!--        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-formula.png"/>-->
 <!--        <div id="Stage" class="de-slider">-->
@@ -28,24 +30,24 @@ Template Name: Home
                 
                 <div class="quicklink col-sm-4">
                     
-                    <i class="now fa fa-globe"></i><i class="go fa fa-external-link"></i>
-                    <h2>Heading goes here</h2>
-                    <p>Some text about this section goes here.</p>
+                    <i class="now fa fa-calendar-o"></i><i class="go fa fa-external-link"></i>
+                    <h2>Webinars + Events</h2>
+                    <p class="bucket-text">Next Event: Dallas Oct 31st.</p>
                 </div>
             </a>
             <a href="#">
                 <div class="quicklink col-sm-4">
-                    <i class="now fa fa-globe"></i><i class="go fa fa-external-link"></i>
-                    <h2>Heading goes here</h2>
-                    <p>Some text about this section goes here.</p>
+                    <i class="now fa fa-bullhorn"></i><i class="go fa fa-external-link"></i>
+                    <h2>News</h2>
+                    <p class="bucket-text">Oct 15: DE Announces new website.</p>
                 
                 </div>
             </a>
             <a href="#">
                 <div class="quicklink col-sm-4">
-                    <i class="now fa fa-globe"></i><i class="go fa fa-external-link"></i>
-                    <h2>Heading goes here</h2>
-                    <p>Some text about this section goes here.</p>
+                    <i class="now fa fa-cloud"></i><i class="go fa fa-external-link"></i>
+                    <h2>Big Cloud Backup</h2>
+                    <p class="bucket-text">See what immplimentation your organization needs.</p>
                 
                 </div>
             </a>
