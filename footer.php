@@ -9,24 +9,7 @@
     
             <div class="col-sm-4">
                 <h2><i class="fa fa-twitter"></i> Twitter <a href="http://www.twitter.com/dataedge" target="_blank">@dataedge</a></h2>
-                <p><?php  
-                $username = "dataedge"; 
-                $prefix = "";
-                $suffix = "";
-                $feed = "http://search.twitter.com/search.atom?q=from:" . $username . "&rpp=1";  
-                
-                function parse_feed($feed) {  
-                $stepOne = explode("<content type=\"html\">", $feed);  
-                $stepTwo = explode("</content>", $stepOne[1]);  
-                $tweet = $stepTwo[0];  
-                $tweet = str_replace("&lt;", "<", $tweet);  
-                $tweet = str_replace("&gt;", ">", $tweet);  
-                return $tweet;  
-                }  
-                
-                $twitterFeed = file_get_contents($feed);  
-                echo stripslashes($prefix) . parse_feed($twitterFeed) . stripslashes($suffix);  
-                ?></p>
+                <p>Feed goes here.</p>
             </div>
     
           <div class="col-sm-4">

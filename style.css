@@ -2,7 +2,7 @@
 THEME NAME: Data Edge
 THEME URI: http://www.2020creative.com
 DESCRIPTION: Theme for Edge
-VERSION: 1.5
+VERSION: 1.6
 AUTHOR: Jeff Potts - 20/20 Creative
 AUTHOR URI: http://www.2020creative.com
 TAGS: Storage Management Solutions
@@ -27,8 +27,10 @@ body {
 /*Top*/
 
 #top {
+    height:125px;
+    overflow:hidden;
     background: url('images/de-mark-bg.png') 90% 50% no-repeat;
-    background-size:33%;
+    background-size:44%;
     padding:1.0em 1.3em;
     background-color:#b2ac91;
     border-top-left-radius:1.0em;
@@ -39,7 +41,7 @@ body {
 	font-size: 24px;
 	font-weight: bold;
     text-align: right;
-    margin:55px 0 0 0;
+    margin:35px 0 0 0;
 }
 
 #top .logo {
@@ -428,14 +430,6 @@ body {
 	width: 80px;
 }
 
-
-
-
-/*Slider*/
-
-#slider {
-    background-color:#f0c723;
-}
 
 /*Header*/
 
@@ -982,17 +976,17 @@ input[type="submit"],
 input[type="button"],
 .comment-reply-link {
 	font-weight: normal;
-	font-size: 14px;
+/*	font-size: 14px;*/
 	cursor: pointer;
 	display: inline-block;
-	background: #534f3d;
+/*	background: #534f3d;*/
 	color: #FFFFFF;
-	padding: 1.1em;
+/*	padding: 1.1em;*/
 	border: 1px solid transparent;
 	border-radius: 2px;
 	-webkit-font-smoothing: antialiased;
 	-webkit-appearance: none;	
-	margin-bottom: 1.5em;
+/*	margin-bottom: 1.5em;*/
 	text-decoration: none !important;
 	-webkit-transition: all .2s ease-in;
 	-moz-transition: all .2s ease-in;

@@ -63,7 +63,7 @@
 <!--Adobe Edge Runtime End-->
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid maxpg">
 
 <div class="row">
     <div id="top"class="col-xs-12 col-sm-10 col-sm-offset-1">
