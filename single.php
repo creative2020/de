@@ -19,9 +19,17 @@
       <?php the_content('Continue reading  &raquo;'); ?>
         
         <?php    // If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					} ?>
+					
+if ( in_category( array( 'testimonial', 'webinars' )) ) { //removes comment form from displaying
+    
+    //do nothing
+    } else {
+    if ( comments_open() || get_comments_number() ) {
+		  comments_template();
+        }
+    }
+
+    ?>
        
 	<?php endwhile; ?>
     <?php else : ?>

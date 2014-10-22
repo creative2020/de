@@ -98,6 +98,9 @@ function tt_custom_admin_footer() {
 // adding it to the admin area
 add_filter('admin_footer_text', 'tt_custom_admin_footer');
 
+// add featured images to posts
+add_theme_support( 'post-thumbnails' );
+
 ////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Menus
@@ -143,6 +146,17 @@ function tt_register_sidebars() {
 			'id' => 'tt-home-sidebar',
 			'name' => __( 'TT Home Sidebar', 'textdomain' ),
 			'description' => __( 'Sidebar for home page', 'textdomain' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+    register_sidebar(
+		array(
+			'id' => 'tt-footer-middle',
+			'name' => __( 'TT Footer Middle', 'textdomain' ),
+			'description' => __( 'Footer middle column', 'textdomain' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widget-title">',

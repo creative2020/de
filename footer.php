@@ -8,8 +8,11 @@
         </div>
     
             <div class="col-sm-4">
-                <h2><i class="fa fa-twitter"></i> Twitter <a href="http://www.twitter.com/dataedge" target="_blank">@dataedge</a></h2>
-                <p>Feed goes here.</p>
+                <h2><a href="http://www.twitter.com/dataedge" target="_blank"><i class="fa fa-twitter"></i> Twitter @dataedge</a></h2>
+                <h2><a href="https://www.facebook.com/pages/Dataedge/161795523849507" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></h2>
+                <p><?php dynamic_sidebar( 'tt-footer-middle' );?></p>
+                
+                
             </div>
     
           <div class="col-sm-4">

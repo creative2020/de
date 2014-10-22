@@ -27,6 +27,34 @@ return $tt_post_content;
 
 ////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////// TT Button
+
+// [hsr_btn size="lg" link="#" color="#5e5a4a" fcolor="#ffffff" float="none" target="" class=""]Button Name[/hsr_btn], homes_for_sale_btn
+
+add_shortcode( 'tt_btn', 'tt_btn' );
+function tt_btn($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => '',
+        'color'  => '', //background color - #5e5a4a
+        'fcolor'  => '', //font color - #ffffff
+        'link'    => '#',
+        'float'    => 'none',
+        'target'    => '_blank',
+        'class' => '',
+        'block' => 'n',
+    ), $atts ) );
+    
+    $classes = 'btn btn-primary ' . $class . ' btn-' . $size;
+    
+    if ($block == 'y') {
+    	$classes .= ' btn-block';
+    }
+
+    return '<a type="button" class="' . $classes . '" href="' . $link . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';" target="' . $target . '">' . $content . '</a>';
+}
+
+////////////////////////////////////////////////////////
+
 //////////////////////////////////////////////////////// TT Post Feed
 
 add_shortcode( 'tt_posts', 'tt_posts' ); // echo do_shortcode('[tt_posts limit="-1" cat_name="home"]');
@@ -36,10 +64,13 @@ function tt_posts ( $atts ) {
 	extract( shortcode_atts(
 		array(
 			'name' => 'post',
-            'cat' => '-1',
+            'cat_id' => '-1',
             'cat_name' => '',
             'limit' => '10',
             'type' => 'post',
+            'col_img' => '4',
+            'col_txt' => '8',
+            'display' => 'excerpt', //excerpt or content
 		), $atts )
 	);
     
@@ -58,8 +89,8 @@ $args = array(
 	'post_status' => 'publish',
 	'order' => 'ASC',
 	'posts_per_page' => $limit,
-    'cat' => $cat,
-    //'category_name' => $cat_name,
+    'cat' => $cat_id,
+    'category_name' => $cat_name,
 );
 $the_query = new WP_Query( $args );
 } else { 
@@ -82,20 +113,43 @@ if ( $the_query->have_posts() ) {
         //$image = the_post_thumbnail( 'thumbnail' );
         $size = '250,125';
         $image = get_the_post_thumbnail( $post_id, $size, $attr );
-         
+        $images_url = get_stylesheet_directory_uri();
+        
+        if ( $cat_name == 'webinars' ) {
+            $col_img = '2';
+            $col_txt = '10';
+            $display = 'excerpt';
+        }
+        if ( in_category( 'testimonial' )  ) {
+            $image = '<img src="'.$images_url.'/images/img-fpo.png">';
+        }
+        if ( empty($image)) {
+            $image = '<img src="'.$images_url.'/images/img-fpo.png">';
+        }
 		
 //HTML
         
-    $output .= '<a href="'.$permalink.'"><div class="list-wrap"><div class="list-img col-xs-12 col-sm-4">';  
+    $output .= '<a href="'.$permalink.'"><div class="'.$cat_name.'-wrap">'.
+        '<div class="list-img col-xs-12 col-sm-'.$col_img.' '.$cat_name.'-img">';  
     $output .= $image .
                 '</div>'.
-                '<div class="row col-xs-12 col-sm-8">'. 
-                    '<h2>'. $post->post_title .'</h2>'.
-                    '<p>'. $post->excerpt .'</p>'.
-                '</div></div>'.
-                '</a>'.
-                '<div class="clearfix"></div>';
-
+                '<div class="row col-xs-12 col-sm-'.$col_txt.'">'. 
+                    '<h2>'. $post->post_title .'</h2>';
+        
+        if ( $display == 'content' ) {
+            $output .= '<p>'. $post->post_content .'</p>';
+        } else {
+            $output .= '<p>'. $post->post_excerpt .'</p>';
+        }
+        if ( $cat_name == 'webinars' ) {
+            $output .= '<a class="btn btn-primary btn-large" href="#">Sign up now</a>';
+        } else {
+            // do nothing
+        }  
+            
+        $output .= '</div></div>'.
+                    '</a>'.
+                    '<div class="clearfix"></div>';
 
 	}
 } else {
@@ -198,7 +252,7 @@ wp_reset_postdata();
 return $output;
 }
 
-////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// Verified section
 
 add_shortcode( 'de_verified', 'de_verified' );
     function de_verified () {
@@ -212,3 +266,6 @@ add_shortcode( 'de_verified', 'de_verified' );
     
     return $output;
 }
+
+////////////////////////////////////////////////////////
+
