@@ -4,15 +4,23 @@ Template Name: Blog
 */
 ?>
 <?php get_header(); ?>
-  <div id="main">
+
+<div id="page-main" class="row">
+      <div class="page-inside col-sm-10 col-sm-offset-1">
     <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '611,90' ); ?>
-    <div id="header" style="background: url(<?php echo $src[0]; ?> ) top left no-repeat !important;">    
-      <h1><?php the_title(); ?></h1>
+    <div id="page-header" class="row">    
+      <div class="col-sm-8">
+        <h1><?php the_title(); ?></h1>
+      </div>
+        <div class="col-sm-4 flush">
+            <div class="pg-header-img-wrap flush hidden-xs">
+                <img class="page-header-img" src="<?php echo $src[0]; ?>"/>
+            </div>
+      </div>
     </div>
-    <div id="sidebar">
-      <?php include (TEMPLATEPATH . '/blog_widget.php'); ?>
-    </div>
-    <div id="content">
+      
+<div class="row">  
+<div id="page-content" class="col-sm-8">
     <?php $numposts = get_option('posts_per_page'); ?>
 	<?php $blog_query = new WP_Query('showposts='.$numposts.'&paged='.$paged); ?>
 	<?php if($blog_query->have_posts()) : while($blog_query->have_posts()) : $blog_query->the_post(); ?>
@@ -43,6 +51,10 @@ Template Name: Blog
     <p><?php _e("Try searching for the page you are looking for or using the navigation in the header or sidebar"); ?></p>
     <?php endif; ?>
     </div>
-    <div class="clear"></div>
+    <?php get_template_part( 'section', 'sidebar-1' ); ?>
+    
   </div>
-  <?php get_footer() ?>
+</div>
+    </div>
+
+<?php get_footer() ?>

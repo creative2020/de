@@ -38,7 +38,7 @@
     <?php if(function_exists('wp_page_numbers')) { wp_page_numbers(); } ?>
     </div>
     <div id="sidebar" class="col-sm-4">
-      <?php dynamic_sidebar( 'tt-blog-sidebar' ); ?>
+      <?php dynamic_sidebar( 'Interior Sidebar' ); ?>
   </div>
   </div>
 </div>

@@ -26,9 +26,8 @@ Template Name: Page
     <?php endwhile; endif; ?>
   </div>
       
-  <div id="sidebar" class="col-sm-4">
-      <?php dynamic_sidebar( 'Interior Sidebar' ); ?>
-  </div>
+      <?php get_template_part( 'section', 'sidebar-1' ); ?>
+
   </div>
   </div>
 </div>

@@ -108,19 +108,51 @@ register_nav_menus( array(
 
 ////////////////////////////////////////////////////////
 
-$args = array(
-	'name'          => __( 'TT Sidebar', 'theme_text_domain' ),
-	'id'            => 'tt_sidebar',
-	'description'   => '',
-    'class'         => '',
-	'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</li>',
-	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => '</h2>' );
+function tt_register_sidebars() {
 
-register_sidebar( $args );
+	/* Register the primary sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'tt-sidebar',
+			'name' => __( 'TT Sidebar', 'textdomain' ),
+			'description' => __( 'Main sidebar for pages', 'textdomain' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+    
+    register_sidebar(
+		array(
+			'id' => 'tt-blog-sidebar',
+			'name' => __( 'TT Blog Sidebar', 'textdomain' ),
+			'description' => __( 'Sidebar for blog and archive', 'textdomain' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+    
+    register_sidebar(
+		array(
+			'id' => 'tt-home-sidebar',
+			'name' => __( 'TT Home Sidebar', 'textdomain' ),
+			'description' => __( 'Sidebar for home page', 'textdomain' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
+	/* Repeat register_sidebar() code for additional sidebars. */
+}
+add_action( 'widgets_init', 'tt_register_sidebars' );
 
 ////////////////////////////////////////////////////////
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// disable admin area
 
@@ -150,3 +182,17 @@ add_action('admin_print_footer_scripts', 'tt_print_acf');
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//  2020 Print Certificate
+add_shortcode('my_certificate', 'f_my_certificate');
+function f_my_certificate() {
+        return '<div><a class="btn" href="http://dataedge.com/wp-content/themes/dataedge/score-print.php?cert-name=' . $_GET["cert-name"] . '" target="_blank">Print My Certificate</a></div>';
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////

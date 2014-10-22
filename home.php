@@ -69,14 +69,7 @@ Template Name: Home
         </div>
         </div>    
    
-        <div id="sidebar" class="col-xs-12 col-sm-4">
-            <div class="verified">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Verified-Data-Recovery.png" style="max-width:250px;" class="img-responsive centered">
-                <p><h2 class="centered">Get your company <span style="color:#cca814;">VERIFIED</span></h2></p>
-                <p><a class="btn btn-primary">FREE Online Assesment Tool</a></p>
-            </div>
-            <?php dynamic_sidebar( 'tt-sidebar' ); ?>
-        </div>
+        <?php get_template_part( 'section', 'sidebar-1' ); ?>
         
     </div><!--row-->
 
