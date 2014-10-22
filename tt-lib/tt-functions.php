@@ -19,6 +19,9 @@ require_once ('tt-shortcodes.php');
 // CPT's
 // require_once ('tt-cpt.php');
 
+// Enable shortcodes in widgets
+add_filter('widget_text', 'do_shortcode');
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Add boostrap from CDN
 
 if( !function_exists("tt_bootstrap_cdn") ) {  
@@ -196,3 +199,24 @@ function f_my_certificate() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
