@@ -154,12 +154,7 @@ if ( $the_query->have_posts() ) {
 	}
 } else {
 	// no posts found
-    if ( $cat_name == 'webinars' ) {
-            echo '<h3>No Webinars are scheduled</h3>';
-        } else {
-            echo '<h2>No '. $type .' found</h2>';
-        }
-	
+	echo '<h2>No ' . $type . ' found</h2>';
 }
     // after loop
     //$output .= '</ul>';
