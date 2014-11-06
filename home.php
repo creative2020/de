@@ -34,17 +34,16 @@ Template Name: Home
                     
                     <i class="now fa fa-calendar-o"></i><i class="go fa fa-external-link"></i>
                     <h2>Webinars + Events</h2>
-                    <h3 class="bucket-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Boulevard-Brewing-Logo.gif" style="height:30px;"> Nov. 11: Backup and Brews @ Boulevard Brewery.</h3>
-                    <h3 class="bucket-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sporting-kc.png" style="height:30px;"> Nov. 12: Backup Goals @ </br>Sporting KC.</h3>
+                    <?php echo do_shortcode('[tt_news cat_name="webinars" limit="2"]'); ?>
+
                 </div>
             </a>
             <a href="#">
-                <div class="quicklink col-sm-4">
+                <div class="quicklink news col-sm-4">
                     <i class="now fa fa-bullhorn"></i><i class="go fa fa-external-link"></i>
                     <h2>News</h2>
                     <p class="bucket-text">
-                        <h3><a href="#">News article one</a></br></h3>
-                        <h3><a href="#">News article two</a></br></h3>
+                        <?php echo do_shortcode('[tt_news cat_name="news" limit="2"]'); ?>
                     </p>
                 
                 </div>

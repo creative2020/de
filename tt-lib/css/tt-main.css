@@ -151,11 +151,13 @@ ul#menu-main-navigation {
 #quicklink-wrap .quicklink.events h2 {
     margin-bottom:15px;
 }
-#quicklink-wrap .quicklink.events h3 {
+#quicklink-wrap .quicklink.events h3,
+#quicklink-wrap .quicklink.news h3 {
     font-size:0.7em;
-    line-height:0.7;
-    padding:0.4em 0;
+    line-height:1.2;
+    padding:15px 0 0 0;
     height:50px;
+    text-align:left;
 }
 .quicklink.last {
     border-right:0px;
@@ -185,9 +187,15 @@ ul#menu-main-navigation {
     display:none;
 }
 
-.bucket-text {
+.bucket-text{
     font-size:0.8em;
     line-height:1.0em;
+
+}
+.bucket-text img {
+    height:50px;
+    margin-top:-15px;
+    margin-right:8px;
 
 }
 

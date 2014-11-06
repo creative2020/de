@@ -252,6 +252,94 @@ wp_reset_postdata();
 return $output;
 }
 
+//////////////////////////////////////////////////////// TT Testimonials
+
+add_shortcode( 'tt_news', 'tt_news' ); // echo do_shortcode('[tt_shortcode limit="-1" cat_name="home"]');
+function tt_news ( $atts ) {
+
+	// Attributes
+	extract( shortcode_atts(
+		array(
+			'name' => 'post',
+            'cat' => '-1',
+            'cat_name' => 'webinars',
+            'limit' => '2',
+            'type' => 'post',
+		), $atts )
+	);
+    
+    /////////////////////////////////////// Variables
+$user_ID = get_current_user_id();
+$user_data = get_user_meta( $user_ID );
+$user_photo_id = $user_data[photo][0];
+$user_photo_url = wp_get_attachment_url( $user_photo_id );
+$user_photo_img = '<img src="' . $user_photo_url . '">';
+
+/////////////////////////////////////// All Query    
+if ($name == 'post') {
+	// The Query
+$args = array(
+	'post_type' => $type,
+	'post_status' => 'publish',
+	'order' => 'ASC',
+	'posts_per_page' => $limit,
+    'cat' => $cat,
+    'category_name' => $cat_name,
+);
+$the_query = new WP_Query( $args );
+} else { 
+	//nothing
+	}
+    
+global $post;
+
+// pre loop
+//$output = '<ul>';    
+
+// The Loop
+if ( $the_query->have_posts() ) {
+	while ( $the_query->have_posts() ) {
+		$the_query->the_post();
+		// pull meta for each post
+		$post_id = get_the_ID();
+		$permalink = get_permalink( $id );
+        $post = get_post();
+        //$image = the_post_thumbnail( 'thumbnail' );
+        $size = '250,125';
+        $has_feature_img = has_post_thumbnail( $post_id );
+        
+        if ( $has_feature_img == 'true') {
+        
+            $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+            $image = get_the_post_thumbnail( $post_id, $size, $attr );
+            $img_url = wp_get_attachment_image_src( $post_thumbnail_id );
+            $img = '<img class="pull-left" src="'.$img_url[0].'"/> ';
+            
+        } else {
+            
+            $img = '';
+            
+        }
+		
+//HTML
+        
+    $output .= '<h3 class="bucket-text">'.$img.''. $post->post_title.'</h3>';
+        
+
+	}
+} else {
+	// no posts found
+	echo '<h2>No ' . $type . ' found</h2>';
+}
+    // after loop
+    //$output .= '</ul>';
+    
+/* Restore original Post Data */
+wp_reset_postdata();
+return $output;
+}
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Verified section
 
 add_shortcode( 'de_verified', 'de_verified' );
@@ -295,6 +383,21 @@ function cta_btn($atts, $content = null) {
     }
 
     return '<a type="button" class="' . $classes . '" href="' . $link . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';" target="' . $target . '"><span class="promo" style="padding:0.5em;background-color:'.$promo_bg.';"><i class="fa fa-clock-o"></i> '.$promo.'</span> ' . $content . '</a>';
+}
+
+////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////// TT rule
+
+add_shortcode( 'tt_rule', 'tt_rule' ); //line
+function tt_rule($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => '1px',
+        'color'  => '#ccc',
+        'classes'  => 'col-sm-12 rule',
+    ), $atts ) );
+
+    return '<div class="' . $classes . '" style="border-top:' . $size . ' solid ' . $color .';padding:1.0em 0;"></div>';
 }
 
 ////////////////////////////////////////////////////////
