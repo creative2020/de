@@ -252,7 +252,7 @@ wp_reset_postdata();
 return $output;
 }
 
-//////////////////////////////////////////////////////// TT Testimonials
+//////////////////////////////////////////////////////// TT News
 
 add_shortcode( 'tt_news', 'tt_news' ); // echo do_shortcode('[tt_shortcode limit="-1" cat_name="home"]');
 function tt_news ( $atts ) {
@@ -318,12 +318,13 @@ if ( $the_query->have_posts() ) {
         } else {
             
             $img = '';
+            $style = 'text-align:center;';
             
         }
 		
 //HTML
         
-    $output .= '<h3 class="bucket-text">'.$img.''. $post->post_title.'</h3>';
+    $output .= '<a href="'.$permalink.'"><h3 class="bucket-text" style="'.$style.'">'.$img.''. $post->post_title.'</h3></a>';
         
 
 	}
