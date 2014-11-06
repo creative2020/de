@@ -19,7 +19,7 @@ Template Name: Home
         
         <div id="Stage" class="de-slider"></div>
         
-        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-formula.png"/>
+        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-rain.png"/>
 <!--        <div id="Stage" class="de-slider">-->
 	</div>
 </div> <!--row-->
@@ -30,28 +30,34 @@ Template Name: Home
             
             <a href="#">
                 
-                <div class="quicklink col-sm-4">
+                <div class="quicklink events col-sm-4">
                     
                     <i class="now fa fa-calendar-o"></i><i class="go fa fa-external-link"></i>
                     <h2>Webinars + Events</h2>
-                    <p class="bucket-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Boulevard-Brewing-Logo.gif" style="height:30px;"> Nov. 11: Backup and Brews @ Boulevard Brewery.</p>
-                    <p class="bucket-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sporting-kc.png" style="height:30px;"> Nov. 12: Backup Goals @ </br>Sporting KC.</p>
+                    <h3 class="bucket-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Boulevard-Brewing-Logo.gif" style="height:30px;"> Nov. 11: Backup and Brews @ Boulevard Brewery.</h3>
+                    <h3 class="bucket-text"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sporting-kc.png" style="height:30px;"> Nov. 12: Backup Goals @ </br>Sporting KC.</h3>
                 </div>
             </a>
             <a href="#">
                 <div class="quicklink col-sm-4">
                     <i class="now fa fa-bullhorn"></i><i class="go fa fa-external-link"></i>
                     <h2>News</h2>
-                    <p class="bucket-text">Oct 15: DE Announces new website.</p>
+                    <p class="bucket-text">
+                        <h3><a href="#">News article one</a></br></h3>
+                        <h3><a href="#">News article two</a></br></h3>
+                    </p>
                 
                 </div>
             </a>
             <a href="#">
-                <div class="quicklink col-sm-4">
+                <div class="quicklink last col-sm-4">
                     <i class="now fa fa-cloud"></i><i class="go fa fa-external-link"></i>
-                    <h2>Big Cloud Backup</h2>
-                    <p class="bucket-text">See what immplimentation your organization needs.</p>
-                
+                    <h2>Business Cloud Backup</h2>
+                    <p class="bucket-text">
+                        <h3><a href="#">Cloud Server</a></br></h3>
+                        <h3><a href="#">Cloud Backup & Recovery</a></br></h3>
+                        
+                    </p>
                 </div>
             </a>
     </div>
@@ -61,6 +67,18 @@ Template Name: Home
 
 </div>
 
+<div class="row">
+    <div id="home-text" class="col-sm-10 col-sm-offset-1">
+        
+            <?php //echo 'main-text'; ?>
+        
+        <p>At <strong>Dataedge</strong> we <em>Solve</em> data problems and <em>Protect</em> your business so you can focus on your business. Having this peace of mind that your data will always be available is NUMBER ONE! We specialize in <a href="/solutions/cloud-backup"><strong>Cloud Backup</strong></a> and <a href="/solutions/"><strong>Recovery</strong></a> solutions to keep your business up and running. There a lot of options in the <a href="#"><strong>Cloud Server</a> marketplace</strong>. Dataedge has the experience to help guide you through the benefits of <a href="/solutions/cloud-backup">Could Servers</a> and the knowledge to implement. We will make sure your new business server will meet your specific <a href="/solutions">Cloud solution</a> goals.</p>
+       
+        </div>    
+   
+        
+        
+    </div><!--row-->
 
 <div class="row">
     <div id="main" class="col-sm-6 col-sm-offset-1">

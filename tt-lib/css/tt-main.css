@@ -103,9 +103,12 @@ ul#menu-main-navigation {
     color:white;
     font-size:1.4em;
     text-align:center;
+    text-decoration:none;
+    
 }
 #quicklink-wrap a {
     color:white;
+    text-decoration:none;
 }
 .quicklink:hover {
     background-color:#f0c723;
@@ -120,13 +123,42 @@ ul#menu-main-navigation {
     font-size:1.2em;
     padding-bottom:0.5em;
 }
+#quicklink-wrap h3 {
+    background-color:#bdb8a1;
+    color:white;
+    font-weight:300;
+    font-size:1.0em;
+    padding:0.5em 0;
+    margin:1px 0;
+    height:50px;
+}
+#quicklink-wrap h3 a{
+    text-decoration:none;
+}
+#quicklink-wrap h3:hover{
+    background-color:#428bca;
+    text-decoration:none;
+}
 
 .quicklink {
-    padding:1.0em;
+    padding:1.0em 0 0 0;
     height:250px;
     overflow:hidden;
     background-color:#b2ac91;
     transition: background-color 0.6s ease;
+    border-right:1px solid #dcd9cd;
+}
+#quicklink-wrap .quicklink.events h2 {
+    margin-bottom:15px;
+}
+#quicklink-wrap .quicklink.events h3 {
+    font-size:0.7em;
+    line-height:0.7;
+    padding:0.4em 0;
+    height:50px;
+}
+.quicklink.last {
+    border-right:0px;
 }
 .quicklink p{
     margin:0 0 1.0em 0;
@@ -158,6 +190,17 @@ ul#menu-main-navigation {
     line-height:1.0em;
 
 }
+
+/*Home Text*/
+
+#home-text {
+    color:#706c59;
+    background-color:#bdb79f;
+    padding:1.0em 2.0em;
+    line-height:2.0;
+}
+
+
 
 /*Sidebar*/
 
@@ -356,6 +399,12 @@ i.fa-quote-left {
 }
 i.fa-quote-right {
     font-size:1.0em;
+}
+.btn.cta {
+    padding:1.0em 1.2em;
+}
+.btn.cta:hover {
+    opacity:0.7;
 }
 
 /* mobile ------------------------START------------------- */

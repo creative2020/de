@@ -269,3 +269,32 @@ add_shortcode( 'de_verified', 'de_verified' );
 
 ////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////// CTA Button
+
+// [tt_btn size="lg" link="#" color="#00CC09" fcolor="#ffffff" float="none" target="" class="cta centered" promo="Nov-88"]Button Name[/tt_btn]
+
+add_shortcode( 'cta_btn', 'cta_btn' );
+function cta_btn($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => 'lg',
+        'color'  => '#00CC09', //background color
+        'fcolor'  => '#ffffff', //font color - #ffffff
+        'link'    => '#',
+        'float'    => 'none',
+        'target'    => '_blank',
+        'class' => 'cta',
+        'block' => 'n',
+        'promo' => '888',
+        'promo_bg' => '#f0c723',
+    ), $atts ) );
+    
+    $classes = 'btn btn-primary ' . $class . ' btn-' . $size;
+    
+    if ($block == 'y') {
+    	$classes .= ' btn-block';
+    }
+
+    return '<a type="button" class="' . $classes . '" href="' . $link . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';" target="' . $target . '"><span class="promo" style="padding:0.5em;background-color:'.$promo_bg.';"><i class="fa fa-clock-o"></i> '.$promo.'</span> ' . $content . '</a>';
+}
+
+////////////////////////////////////////////////////////
