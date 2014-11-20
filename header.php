@@ -30,37 +30,13 @@
 <?php wp_head(); ?>
 <?php if (is_page('weekly-wednesday-webinar')); { ?>
 <!--Validation-->
-<script type="text/javascript" src="http://www.freshaircreatives.com/data/global/scripts/rsv.js"></script>
-<script type="text/javascript">
-  var rules = [];
-  rules.push("required,webinar,Please enter the webinar you'd like to sign up for.");
-  rules.push("required,webinar,Please enter the date you'd like to sign up for.");
-  rules.push("required,first_name,Please enter your first name.");
-  rules.push("required,last_name,Please enter your last name.");
-  rules.push("required,email,Please enter your email address.");
-  rules.push("valid_email,email,Please enter a valid email address.");
-  rsv.errorFieldClass = null;
-  rsv.displayType = "alert-all";
-  rsv.customErrorHandler = null;
-</script>
 <?php } ?>
-    <!--Adobe Edge Runtime-->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.0.min.js"></script>
-    <style>
-        .edgeLoad-de-slider { visibility:hidden; }
-    </style>
-<script>
-   AdobeEdge.loadComposition('de-slider', 'de-slider', {
-    scaleToFit: "none",
-    centerStage: "none",
-    minW: "100px",
-    maxW: "none",
-    width: "100%",
-    height: "100%"
-}, {"dom":{}}, {"dom":{}});
-</script>
-<!--Adobe Edge Runtime End-->
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: 1000
+    })
+});
+</script>   
 </head>
 <body>
 <div class="container-fluid maxpg">

@@ -350,7 +350,7 @@ add_shortcode( 'de_verified', 'de_verified' );
         $output .= '<div class="verified">
                     <img src="'.$images_url.'/images/Verified-Data-Recovery.png" style="max-width:250px;" class="img-responsive centered">
                     <p><h2 class="centered">Get your company <span style="color:#cca814;">VERIFIED</span></h2></p>
-                    <p><a class="btn btn-primary">FREE Online Assesment Tool</a></p>
+                    <p><a href="/verified-data-recovery" class="btn btn-primary">FREE Online Assesment Tool</a></p>
                 </div>';
     
     return $output;

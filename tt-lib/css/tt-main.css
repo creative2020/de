@@ -207,7 +207,55 @@ ul#menu-main-navigation {
     padding:1.0em 2.0em;
     line-height:2.0;
 }
+#home-text a{
+    color:#706c59;
+}
+#home-text a:hover{
+    color:#f0c723;
+}
 
+/*Forms*/
+.promo-discount {
+    background-color:green;
+    color:white;
+    padding:0.1em 1.0em;
+}
+.promo-discount .ginput_container input[type=text]{
+    border:0px;
+    background-color:transparent;
+}
+.vdr-price {
+    color:#5e5a4a;
+}
+.vdr-price .ginput_container input[type=text]{
+    color:green;
+    font-size:2.5em;
+    border:0px;
+}
+/*TT Slider*/
+.carousel-caption h2 {
+    color:white;
+    font-size:4.0em;
+    
+}
+.carousel-caption p {
+    color:white;
+    font-size:2.0em;
+    
+}
+.carousel-caption {
+    right: 40%;
+    left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align:left;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: 85%;
+    font-size: 30px;
+}
 
 
 /*Sidebar*/
@@ -342,10 +390,10 @@ ul#menu-main-navigation {
 .hp-message h3{
     font-size:1.0em;
 }
-.edgeLoad-de-slider { visibility:hidden; }
 
 #slider {
-    max-height:400px;
+    max-width:1000px;
+    overflow:hidden;
 }
 /*Webinar*/
 .webinars-wrap {
@@ -447,20 +495,6 @@ and (max-width : 768px) {
 }
 
 } /* @media -------------END-----------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

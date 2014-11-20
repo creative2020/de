@@ -13,14 +13,67 @@ Template Name: Home
     </div>
 </div> <!--row-->
 
-<div id="slider-wrap" class="row">
-    <div id="slider" class="col-sm-10 col-sm-offset-1 flush">
-        <?php //echo do_shortcode('[edge_animation id="2"]'); ?>
+<!--src="<?php //echo get_stylesheet_directory_uri(); ?>/images/poster-slider-asigra-b.png"-->
+
+<div class="row">
+    <div class="col-sm-10 col-sm-offset-1 flush">
         
-        <div id="Stage" class="de-slider"></div>
+
         
-        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-rain.png"/>
-<!--        <div id="Stage" class="de-slider">-->
+        
+<!--TEST 2-->
+        
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-asigra.png" alt="...">
+      <div class="carousel-caption">
+          <h2>Cloud control</h2>
+          <p>Where cloud backup and recovery </br>meet real people.</p>
+    </div>
+    </div>
+    <div class="item">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-vdr.png" alt="...">
+      <div class="carousel-caption">
+          <h2>Is your data at risk?</h2>
+          <p>94% of businesses that lose their data for more than 24 hrs never recover. 
+We don’t believe it has to be that way.</p>
+    </div>
+    </div>
+      <div class="item">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-rain.png" alt="...">
+    <div class="carousel-caption">
+          <h2>Rainy Day?</h2>
+          <p>Certified backup solutions for anyday needed.</p>
+    </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        
+<!--END-->
+        
+        
+        
+        
 	</div>
 </div> <!--row-->
 
@@ -72,7 +125,7 @@ Template Name: Home
         
             <?php //echo 'main-text'; ?>
         
-        <p>At <strong>Dataedge</strong> we <em>Solve</em> data problems and <em>Protect</em> your business so you can focus on your business. Having this peace of mind that your data will always be available is NUMBER ONE! We specialize in <a href="/solutions/cloud-backup"><strong>Cloud Backup</strong></a> and <a href="/solutions/"><strong>Recovery</strong></a> solutions to keep your business up and running. There a lot of options in the <a href="#"><strong>Cloud Server</a> marketplace</strong>. Dataedge has the experience to help guide you through the benefits of <a href="/solutions/cloud-backup">Could Servers</a> and the knowledge to implement. We will make sure your new business server will meet your specific <a href="/solutions">Cloud solution</a> goals.</p>
+        <p>Your data is one of your business’s most critical assets. That’s why at Dataedge, we make consistent, reliable data protection and immediate data access our number one priority. Using our <a href="/backup-and-restore/">cloud backup</a> and <a href="/solutions/cloud-backup/">recovery solutions</a>, you can feel confident knowing you have a team of support specialists available to guide you through the implementation process and ensure your business is prepared for anything. With the right cloud server solution in place, we can provide remote backup at any time should you need it for the peace of mind you deserve.</p>
        
         </div>    
    
