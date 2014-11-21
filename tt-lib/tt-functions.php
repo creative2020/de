@@ -45,13 +45,6 @@ if( !function_exists("tt_bootstrap_cdn") ) {
         wp_register_script( 'tt-jq2', 'http://code.jquery.com/jquery-1.11.1.min.js', array() );
         wp_enqueue_script( 'tt-jq2' );
         
-        wp_register_script( 'tt-unslider', get_stylesheet_directory_uri() . '/tt-lib/js/unslider.js', array('tt-jq2') );
-        wp_enqueue_script( 'tt-unslider' );
-        
-
-        
-        
-                
         // child themes
         // wp_register_style( 'tt-child', get_stylesheet_directory_uri() . '/tt-child.css', array(), '1.0', 'all' );
         // wp_enqueue_style( 'tt-child' );
