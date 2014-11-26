@@ -122,7 +122,6 @@ We don’t believe it has to be that way.</p>
             <?php //echo 'main-text'; ?>
         
         <p>Your data is one of your business’s most critical assets. That’s why at Dataedge, we make consistent, reliable data protection and immediate data access our number one priority. Using our <a href="/backup-and-restore/">cloud backup</a> and <a href="/solutions/cloud-backup/">recovery solutions</a>, you can feel confident knowing you have a team of support specialists available to guide you through the implementation process and ensure your business is prepared for anything. With the right cloud server solution in place, we can provide remote backup at any time should you need it for the peace of mind you deserve.</p>
-        <p>Dataedge has built our business around data protections solutions.  We design, implement and support many different storage and backup solutions.   NO one solution is perfect for everyone.   We invest the time to understand what you want to accomplish, design it, quote it, implementing it and support you over time.</p>
        
         </div>    
    

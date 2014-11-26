@@ -43,11 +43,11 @@
 
 <div class="row">
     <div id="top"class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <div class="logo col-xs-12 col-sm-12 col-md-7">
+        <div class="logo col-xs-12 col-sm-6">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-7">
-            <div id="social" class="col-xs-12 col-sm-12 col-md-12 hidden-xs">
+        <div class="col-xs-12 col-sm-7">
+            <div id="social" class="col-xs-12 col-sm-12 hidden-xs">
                 <div class="google pull-right"><a href="https://plus.google.com/106849917956925834579/about" title="google +" target="_blank"></a></div>
                 <div class="facebook pull-right"><a href="http://www.facebook.com/pages/Dataedge/161795523849507" title="Facebook" target="_blank"></a></div>
                 <div class="in pull-right"><a href="http://www.linkedin.com/in/robdidlake" title="Linked In" target="_blank"></a></div>

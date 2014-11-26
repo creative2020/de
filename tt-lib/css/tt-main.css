@@ -497,39 +497,6 @@ and (max-width : 768px) {
 
 } /* @media -------------END-----------------*/
 
-/* iPad ------------------------START------------------- */
-
-@media only screen 
-and (max-width : 992px) {
-    
-#social .pull-right {
-}
-#social {
-    width:100%;
-    padding:0 auto;
-    text-align:center;
-}    
-#slider-wrap {
-        display:none;
-    }
-
-
-.partner-logo {
-    border-bottom:1px solid #dad4bc;
-}
-.quicklink {
-    height:auto;
-    padding: 1.0em;
-    overflow:visible;
-    background-color: #5e5a4a;
-    border-bottom:1px solid #dad4bc;
-}
-.now, .go, .quicklink:hover .go {
-    display:none;
-}
-
-} /* @media -------------END-----------------*/
-
 
 
 
