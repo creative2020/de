@@ -31,7 +31,7 @@
 
       
   <div id="copyright" class="col-sm-10 col-sm-offset-1">
-    <p><?php _e('&copy;','flexx'); echo ' '.date('Y').' '; _e(''.bloginfo('name'). ' - All rights reserved.','flexx'); ?> | <a href="http://www.dataedge.com/privacypolicy/" title="Privacy Policy">privacy policy</a> | <a href="http://www.dataedge.com/payments/" title="Payments">payments</a></p>
+    <p><?php _e('&copy;','flexx'); echo ' '.date('Y').' '; _e(''.bloginfo('name'). ' - All rights reserved.','flexx'); ?> | <a href="/privacypolicy/" title="Privacy Policy">privacy policy</a> | <a href="/payments/" title="Payments">payments</a></p>
   </div>
   
 </div><!--row-->

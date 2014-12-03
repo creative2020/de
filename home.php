@@ -25,34 +25,46 @@ Template Name: Home
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-asigra.png" alt="...">
+    <div class="item active"> <!-- item -->
+      <a href="/solutions/cloud-backup/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-asigra.png" alt="...">
       <div class="carousel-caption">
           <h2>Cloud control</h2>
           <p>Where cloud backup and recovery </br>meet real people.</p>
-    </div>
-    </div>
-    <div class="item">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-vdr.png" alt="...">
+    </div></a>
+    </div> <!-- item end -->
+    
+    <div class="item"> <!-- item -->
+      <a href="/data-audit/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-vdr.png" alt="...">
       <div class="carousel-caption">
           <h2>Is your data at risk?</h2>
           <p>94% of businesses that lose their data for more than 24 hrs never recover. 
 We don’t believe it has to be that way.</p>
-    </div>
-    </div>
-      <div class="item">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-rain.png" alt="...">
-    <div class="carousel-caption">
-          <h2>Rainy Day?</h2>
-          <p>Certified backup solutions for </br>anyday needed.</p>
-    </div>
-    </div>
+    </div></a>
+    </div> <!-- item end -->
     
-  </div>
+    <div class="item"> <!-- item -->
+        <a href="/solutions/cloud-backup/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-rain.png" alt="...">
+        <div class="carousel-caption">
+              <h2>Rainy Day?</h2>
+              <p>Certified backup solutions for </br>anyday needed.</p>
+        </div></a>
+    </div> <!-- item end -->
+
+<div class="item"> <!-- item -->
+        <a href="/looking-behind-curtain/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-award.png" alt="...">
+        <div class="carousel-caption">
+              <h2>Asigra awards Dataedge with</h2>
+              <p>The Most Outstanding Private Cloud Backup and Recovery Implementation.</p>
+            <a class="btn btn-lg btn-slider" href="/looking-behind-curtain/" >Read article</a>
+        </div></a>
+    </div> <!-- item end -->
+    
+  </div> <!-- carousel inner wrap -->
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -98,12 +110,12 @@ We don’t believe it has to be that way.</p>
                 
                 </div>
             </a>
-            <a href="#">
+            <a href="/solutions/cloud-backup/">
                 <div class="quicklink last col-sm-4">
                     <i class="now fa fa-cloud"></i><i class="go fa fa-external-link"></i>
                     <h2>Business Cloud Backup</h2>
                     <p class="bucket-text">
-                        <h3><a href="/remote-backup/">Cloud Server</a></br></h3>
+                        <h3><a href="/solutions/cloud-backup/">Exchange Cloud Backup</a></br></h3>
                         <h3><a href="/solutions/cloud-backup/">Cloud Backup & Recovery</a></br></h3>
                         
                     </p>
@@ -118,12 +130,10 @@ We don’t believe it has to be that way.</p>
 
 <div class="row">
     <div id="home-text" class="col-sm-10 col-sm-offset-1">
-        
-            <?php //echo 'main-text'; ?>
-        
-        <p>Your data is one of your business’s most critical assets. That’s why at Dataedge, we make consistent, reliable data protection and immediate data access our number one priority. Using our <a href="/backup-and-restore/">cloud backup</a> and <a href="/solutions/cloud-backup/">recovery solutions</a>, you can feel confident knowing you have a team of support specialists available to guide you through the implementation process and ensure your business is prepared for anything. With the right cloud server solution in place, we can provide remote backup at any time should you need it for the peace of mind you deserve.</p>
-       
-        </div>    
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <?php the_content(); ?>
+        <?php endwhile; endif; ?>       
+    </div>    
    
         
         
@@ -143,13 +153,13 @@ We don’t believe it has to be that way.</p>
 <div class="row">
     <div id="partners" class="row col-sm-10 col-sm-offset-1">
         <div class="col-sm-12">
-        <a href="/partners-2/"><div class="partner-logo col-xs-12 col-sm-3  col-sm-offset-0 nimble">
+        <a href="/nimble-storage/"><div class="partner-logo col-xs-12 col-sm-3  col-sm-offset-0 nimble">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/partners/Nimble-Storage-Logo-rev.png" class="img-responsive centered" style="margin-top:15px;">
         </div></a>    
-        <a href="/partners-2/"><div class="partner-logo col-xs-12 col-sm-2">
+        <a href="/asigra/"><div class="partner-logo col-xs-12 col-sm-2">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/partners/asigra-logo-rev.png" class="img-responsive centered" style="margin-top:5px;">
         </div></a>
-        <a href="/partners-2/"><div class="partner-logo col-xs-12 col-sm-2">
+        <a href="/storserver-backup-appliance/"><div class="partner-logo col-xs-12 col-sm-2">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/partners/stor-server-logo-rev.png" class="img-responsive centered">
         </div></a>
         <a href="/partners-2/"><div class="partner-logo col-xs-12 col-sm-1 hp">
