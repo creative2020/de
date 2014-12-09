@@ -25,7 +25,9 @@ Template Name: Home
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -61,6 +63,23 @@ We don’t believe it has to be that way.</p>
               <h2>Asigra awards Dataedge with</h2>
               <p>The Most Outstanding Private Cloud Backup and Recovery Implementation.</p>
             <a class="btn btn-lg btn-slider" href="/looking-behind-curtain/" >Read article</a>
+        </div></a>
+    </div> <!-- item end -->
+
+<div class="item"> <!-- item -->
+        <a href="/nimble-storage-reseller/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-nimble.png" alt="...">
+        <div class="carousel-caption">
+              <h2>Storage as versatile as...</h2>
+              <p>,well... the name.</p>
+            <a class="btn btn-lg btn-slider" href="/nimble-storage-reseller/" >Get Nimble</a>
+        </div></a>
+    </div> <!-- item end -->
+<div class="item"> <!-- item -->
+        <a href="/storserver-backup-appliance/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/poster-slider-storserver.png" alt="...">
+        <div class="carousel-caption">
+              <h2>Storage</h2>
+              <p>For all data</p>
+            <a class="btn btn-lg btn-slider" href="/storserver-backup-appliance/" >View options</a>
         </div></a>
     </div> <!-- item end -->
     
@@ -113,10 +132,10 @@ We don’t believe it has to be that way.</p>
             <a href="/solutions/cloud-backup/">
                 <div class="quicklink last col-sm-4">
                     <i class="now fa fa-cloud"></i><i class="go fa fa-external-link"></i>
-                    <h2>Business Cloud Backup</h2>
+                    <h2>Cloud Backup</h2>
                     <p class="bucket-text">
-                        <h3><a href="/solutions/cloud-backup/">Exchange Cloud Backup</a></br></h3>
-                        <h3><a href="/solutions/cloud-backup/">Cloud Backup & Recovery</a></br></h3>
+                        <h3><a href="/solutions/enterprise-backup-appliance/">Enterprise Backup Appliance</a></br></h3>
+                        <h3><a href="/backup-and-restore/">Backup and Restore</a></br></h3>
                         
                     </p>
                 </div>

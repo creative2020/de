@@ -478,15 +478,38 @@ i.fa-quote-right {
     opacity:0.7;
 }
 
+/* Tablet ------------------------START------------------- */
+
+@media only screen and (min-width : 768px) and (max-width : 1079px) {
+    
+.nav > li {
+    
+}
+.nav > li > a {
+    padding: 15px 10px;
+    font-size:1.0em;
+    text-decoration:none;
+    border-right:4px solid #3c3a2f;
+}
+.nav > li > a:hover {
+    color:white;
+    background-color:#f0c723;
+}
+
+} /* @media Tablet-------------END-----------------*/
+
 /* mobile ------------------------START------------------- */
 
-@media only screen 
-and (max-width : 768px) {
-    
+@media only screen and (max-width : 768px) {
+
+.slide  {
+    display:none;
+}
+
+
 #social .pull-right {
 }
 #social {
-    width:100%;
     padding:0 auto;
     text-align:center;
 }    

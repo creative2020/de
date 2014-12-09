@@ -7,7 +7,7 @@
     <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '611,90' ); ?>
     <div id="page-header" class="row">    
       <div class="col-sm-8">
-        <h1><?php single_cat_title('Archive: '); ?></h1>
+        <h1><?php single_cat_title(''); ?></h1> <!--'Archive: '-->
       </div>
         <div class="col-sm-4 flush">
             <div class="pg-header-img-wrap flush hidden-xs">

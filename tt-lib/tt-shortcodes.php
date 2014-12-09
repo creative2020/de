@@ -242,7 +242,7 @@ if ( $the_query->have_posts() ) {
 	}
 } else {
 	// no posts found
-	echo '<h2>No ' . $type . ' found</h2>';
+	echo '';
 }
     // after loop
     //$output .= '</ul>';
