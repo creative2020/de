@@ -154,6 +154,7 @@ body {
     background-color:white;
     padding-top:2.0em;
     padding-bottom:2.0em;
+    min-height:860px !important;
     
 /*
 	float: left;
@@ -1037,9 +1038,9 @@ input[type="button"]:hover,
 }
 .score-question-box p,
 .score-question-box a {
-    font-weight:600 !important;
+    font-weight:400 !important;
     color:#fff !important;
-    font-size:1.1em;
+    font-size:0.9em;
     margin:0px;
     padding:0.75em !important;
 
@@ -1057,12 +1058,29 @@ input[type="button"]:hover,
 .score-box4 {
     background-color:#29271e;
 }
+.rating {
+    color:white;
+    margin-top:-8px !important;
+}
+.rating .poor{
+    background-color:#dcd9cd;
+    padding:0.3em;
+}
+.rating .average{
+    background-color:#b2ac91;
+    padding:0.3em;
+}
+.rating .best{
+    background-color:#3c3a2f;
+    padding:0.3em;
+}
 .score-best,
 .score-average,
 .score-poor {
     text-align:center;
-    width:70%;
+    width:100%;
     color:#97927b;
+    background-color:#dcd9cd;
     font-size:5.0em;
     margin:16px;
     padding:16px;
@@ -1075,11 +1093,11 @@ input[type="button"]:hover,
 .score {
     text-align:center;
     background-color:#534f3d;
-    width:70%;
+    width:100%;
     color:#fff;
-    font-size:2.5em;
-    padding:16px;
-    margin:16px;
+    font-size:1.5em;
+    padding:8px;
+    margin:8px;
 }
 .score .gfield_label {
     font-size:3.0em;
