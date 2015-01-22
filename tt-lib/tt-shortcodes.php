@@ -115,6 +115,16 @@ if ( $the_query->have_posts() ) {
         $image = get_the_post_thumbnail( $post_id, $size, $attr );
         $images_url = get_stylesheet_directory_uri();
         
+        $register_link = get_post_meta( $post_id, 'register_link' );
+        $reg_link = $register_link[0];
+        $target = '';
+        
+        if( empty( $register_link ) ) {
+            $reg_link = $permalink;
+            } else {
+            $target = '_blank';
+        }
+        
         if ( $cat_name == 'webinars' ) {
             $col_img = '2';
             $col_txt = '10';
@@ -142,7 +152,7 @@ if ( $the_query->have_posts() ) {
             $output .= '<p>'. $post->post_excerpt .'</p>';
         }
         if ( $cat_name == 'webinars' ) {
-            $output .= '<a class="btn btn-primary btn-large" href="#">Sign up now</a>';
+            $output .= '<a class="btn btn-primary btn-large" href="'.$reg_link.'" target="'.$target.'">Sign up now</a>';
         } else {
             // do nothing
         }  
