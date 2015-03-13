@@ -134,7 +134,11 @@ if ( $the_query->have_posts() ) {
             $target = '_blank';
         }
         
+<<<<<<< HEAD
         if ( in_category( 'webinars' ) ) {
+=======
+        if ( $cat_name == 'webinars' ) {
+>>>>>>> f02f90737713fbf7a76e3473ec051f37f457914f
             $col_img = '2';
             $col_txt = '10';
             $display = 'excerpt';
