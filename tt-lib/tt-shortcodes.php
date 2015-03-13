@@ -111,11 +111,30 @@ if ( $the_query->have_posts() ) {
 		$permalink = get_permalink( $id );
         $post = get_post();
         //$image = the_post_thumbnail( 'thumbnail' );
-        $size = '250,125';
-        $image = get_the_post_thumbnail( $post_id, $size, $attr );
+        $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+        
+        $image_info = wp_get_attachment_image_src( $post_thumbnail_id, $size, $icon );
+        
+        $tt_excerpt = $post->post_excerpt;
+        $tt_pre_title = '';
+        $tt_icon = '';
+        
+        $category = get_the_category(); 
+        $cat_name = $category[0]->category_nicename;
+        
         $images_url = get_stylesheet_directory_uri();
         
-        if ( $cat_name == 'webinars' ) {
+        $register_link = get_post_meta( $post_id, 'register_link' );
+        $reg_link = $register_link[0];
+        $target = '';
+        
+        if( empty( $register_link ) ) {
+            $reg_link = $permalink;
+            } else {
+            $target = '_blank';
+        }
+        
+        if ( in_category( 'webinars' ) ) {
             $col_img = '2';
             $col_txt = '10';
             $display = 'excerpt';
@@ -129,9 +148,9 @@ if ( $the_query->have_posts() ) {
 		
 //HTML
         
-    $output .= '<a href="'.$permalink.'"><div class="'.$cat_name.'-wrap">'.
-        '<div class="list-img col-xs-12 col-sm-'.$col_img.' '.$cat_name.'-img">';  
-    $output .= $image .
+    $output .= '<div class="row"><a href="'.$permalink.'"><div class="'.$cat_name.'-wrap">'.
+        '<div class="list-img col-xs-12 col-sm-'.$col_img.' '.$cat_name.'-img img-responsive">';  
+    $output .= '<img src="'.$image_info[0].'" class="img-responsive">'.
                 '</div>'.
                 '<div class="row col-xs-12 col-sm-'.$col_txt.'">'. 
                     '<h2>'. $post->post_title .'</h2>';
@@ -142,13 +161,13 @@ if ( $the_query->have_posts() ) {
             $output .= '<p>'. $post->post_excerpt .'</p>';
         }
         if ( $cat_name == 'webinars' ) {
-            $output .= '<a class="btn btn-primary btn-large" href="#">Sign up now</a>';
+            $output .= '<a class="btn btn-primary btn-large" href="'.$reg_link.'" target="'.$target.'">Sign up now</a>';
         } else {
             // do nothing
         }  
             
         $output .= '</div></div>'.
-                    '</a>'.
+                    '</a></div>'.
                     '<div class="clearfix"></div>';
 
 	}
