@@ -15,8 +15,11 @@
       
 <div class="row">  
 <div id="page-content" class="col-sm-8">
+    
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php the_content('Continue reading  &raquo;'); ?>
+    
+   
         
         <?php    // If comments are open or we have at least one comment, load up the comment template.
 					

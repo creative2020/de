@@ -64,7 +64,6 @@ function tt_posts ( $atts ) {
 	extract( shortcode_atts(
 		array(
 			'name' => 'post',
-            'cat_id' => '-1',
             'cat_name' => '',
             'limit' => '10',
             'type' => 'post',
@@ -89,7 +88,6 @@ $args = array(
 	'post_status' => 'publish',
 	'order' => 'ASC',
 	'posts_per_page' => $limit,
-    'cat' => $cat_id,
     'category_name' => $cat_name,
 );
 $the_query = new WP_Query( $args );
@@ -100,7 +98,7 @@ $the_query = new WP_Query( $args );
 global $post;
 
 // pre loop
-$output = '<div class="row '.$cat_name.'">';    
+$output = '<div class="'.$cat_name.'-wrapper">';    
 
 // The Loop
 if ( $the_query->have_posts() ) {
@@ -120,7 +118,7 @@ if ( $the_query->have_posts() ) {
         $tt_icon = '';
         
         $category = get_the_category(); 
-        $cat_name = $category[0]->category_nicename;
+        //$cat_name = $category[0]->category_nicename;
         
         $images_url = get_stylesheet_directory_uri();
         
@@ -134,9 +132,9 @@ if ( $the_query->have_posts() ) {
             $target = '_blank';
         }
         
-        if ( in_category( 'webinars' ) ) {
-            $col_img = '4';
-            $col_txt = '8';
+        if ( $cat_name == 'webinars' ) {
+            $col_img = '2';
+            $col_txt = '10';
             $display = 'excerpt';
         }
         if ( in_category( 'testimonial' )  ) {
@@ -160,8 +158,8 @@ if ( $the_query->have_posts() ) {
         } else {
             $output .= '<p>'. $post->post_excerpt .'</p>';
         }
-        if ( $cat_name == 'webinars' ) {
-            $output .= '<a class="btn btn-primary btn-large" href="'.$reg_link.'" target="'.$target.'">Sign up now</a>';
+        if ( in_category( 'webinars' ) ) {
+            $output .= '<a class="btn btn-primary btn-large" href="/webinar-wednesday/webinar-signup/?webinar_name='. $post->post_title .'" target="'.$target.'">Sign up now</a>';
         } else {
             // do nothing
         }  
