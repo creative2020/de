@@ -160,7 +160,7 @@ We don’t believe it has to be that way.</p>
 
 <div class="row">
     <div id="main" class="col-sm-6 col-sm-offset-1">
-        <div id="content" class="row col-sm-12">
+        <div id="content" class="col-sm-12">
             <?php echo do_shortcode('[tt_posts limit="6" cat_name="home"]'); ?>
         </div>
         </div>    

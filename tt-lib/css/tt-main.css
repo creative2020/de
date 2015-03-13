@@ -309,26 +309,19 @@ margin-left: 3px;
 	font-size: 12px;
 	line-height: 18px;
 }
-.home-wrap {
+.default-wrap {
     margin-top:15px;
-    margin-right: -45px;
     background-color:white;
-    height:100px;
 }
-.home-wrap:hover {
+.default-wrap:hover {
     background-color:#dad4bc;
 }
 
-.home-img {
-    height:100px;
+.list-img {
     overflow:hidden;
     background-color:transparent;
-    margin-left:-30px;
-    margin-right:30px;
 }
-.home-img img {
-    width:250px;
-    height:125px;
+.list-img img {
 }
     
 #partners {

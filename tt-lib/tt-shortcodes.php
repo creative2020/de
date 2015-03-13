@@ -100,7 +100,7 @@ $the_query = new WP_Query( $args );
 global $post;
 
 // pre loop
-//$output = '<ul>';    
+$output = '<div class="row '.$cat_name.'">';    
 
 // The Loop
 if ( $the_query->have_posts() ) {
@@ -113,7 +113,7 @@ if ( $the_query->have_posts() ) {
         //$image = the_post_thumbnail( 'thumbnail' );
         $post_thumbnail_id = get_post_thumbnail_id( $post_id );
         
-        $image_info = wp_get_attachment_image_src( $post_thumbnail_id, $size, $icon );
+        $image_info = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail', $icon );
         
         $tt_excerpt = $post->post_excerpt;
         $tt_pre_title = '';
@@ -135,8 +135,8 @@ if ( $the_query->have_posts() ) {
         }
         
         if ( in_category( 'webinars' ) ) {
-            $col_img = '2';
-            $col_txt = '10';
+            $col_img = '4';
+            $col_txt = '8';
             $display = 'excerpt';
         }
         if ( in_category( 'testimonial' )  ) {
@@ -148,11 +148,11 @@ if ( $the_query->have_posts() ) {
 		
 //HTML
         
-    $output .= '<div class="row"><a href="'.$permalink.'"><div class="'.$cat_name.'-wrap">'.
+    $output .= '<a href="'.$permalink.'"><div class="row default-wrap '.$cat_name.'-wrap">'.
         '<div class="list-img col-xs-12 col-sm-'.$col_img.' '.$cat_name.'-img img-responsive">';  
     $output .= '<img src="'.$image_info[0].'" class="img-responsive">'.
                 '</div>'.
-                '<div class="row col-xs-12 col-sm-'.$col_txt.'">'. 
+                '<div class="col-xs-12 col-sm-'.$col_txt.'">'. 
                     '<h2>'. $post->post_title .'</h2>';
         
         if ( $display == 'content' ) {
@@ -167,7 +167,7 @@ if ( $the_query->have_posts() ) {
         }  
             
         $output .= '</div></div>'.
-                    '</a></div>'.
+                    '</a>'.
                     '<div class="clearfix"></div>';
 
 	}
@@ -176,7 +176,7 @@ if ( $the_query->have_posts() ) {
 	echo '<h2>No ' . $type . ' found</h2>';
 }
     // after loop
-    //$output .= '</ul>';
+    $output .= '</div>'; //row
     
 /* Restore original Post Data */
 wp_reset_postdata();
