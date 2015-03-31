@@ -19,8 +19,18 @@
 <div class="row">  
 <div id="page-content" class="col-sm-8">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        
-        <div id="post">
+    
+    <?php if ( in_category('white-paper-download') ) {
+    
+     get_template_part('content','white-paper');
+    
+    } else { ?>
+    
+    
+    
+    
+<!--content normal-->        
+    <div id="post">
       <div class="date"><?php the_time('d'); ?> <span><?php the_time('M'); ?></span></div>
       <div class="heading">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -33,6 +43,12 @@
       <div class="content"><?php the_excerpt(); ?></div>
     </div>
     <div class="line"></div>
+<!--content normal-->
+    
+    <?php } ?>
+    
+    
+    
     <?php endwhile; ?>
     <?php endif; ?>
     <?php if(function_exists('wp_page_numbers')) { wp_page_numbers(); } ?>
